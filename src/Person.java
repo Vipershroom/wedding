@@ -11,7 +11,7 @@ public class Person {
         return this.first_name;
     }
 
-    public String get_last_name(String s) {
+    public String get_last_name() {
         return this.last_name;
     }
 }

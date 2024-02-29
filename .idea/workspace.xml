@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2d4a43c-b4d7-4f46-b05b-85b688157ecc" name="Changes" comment="sdfav">
-      <change afterPath="$PROJECT_DIR$/src/Couple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TestWedding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestWedding.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wedding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wedding.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +41,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Sasaki/Desktop/School/wedding",
     "onboarding.tips.debug.path": "/home/sasaki/Desktop/School/CS121/Wedding/src/Main.java"
   }
 }]]></component>

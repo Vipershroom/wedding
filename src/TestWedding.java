@@ -6,6 +6,9 @@ public class TestWedding {
         LocalDate date;
         Person bride;
         Person groom;
+        Couple couple;
+        String loc;
+        Wedding wedding;
 
         Scanner s = new Scanner(System.in);
         System.out.println("When is the wedding?");
@@ -29,6 +32,8 @@ public class TestWedding {
 
         System.out.println("Please enter the first and last name of the bride");
         System.out.println("Names should be seperated by a space");
+
+        // Assure the correct information is set for the bride
         while (true) {
             String[] name = s.nextLine().split(" ");
             if (name.length < 2 || name[0].matches(".*\\d.*") || name[1].matches(".*\\d.*")) {
@@ -37,20 +42,38 @@ public class TestWedding {
             }
 
             bride = new Person(name[0], name[1]);
-
+            break;
+        }
+        // Assure the correct information is set for the groom
+        while (true) {
             System.out.println("Please enter the first and last name of the groom");
             System.out.println("Names should be seperated by a space");
-            name = s.nextLine().split(" ");
+            String[] name = s.nextLine().split(" ");
             if (name.length < 2 || name[0].matches(".*\\d.*") || name[1].matches(".*\\d.*")) {
                 System.out.println("Please enter both the first and last name");
                 continue;
             }
             groom = new Person(name[0], name[1]);
-
+            break;
         }
 
+        couple = new Couple(groom, bride);
 
+        // Assure a location is set
+        while (true) {
+            System.out.println("Please enter a location");
+            loc = s.nextLine();
+            if (!loc.isEmpty()) {
+                break;
+            }
+        }
 
+        // Display the wedding details
+        wedding = new Wedding(date, couple, loc);
+        System.out.println("Here is your wedding");
+        System.out.println("Wedding of: " + wedding.get_couple().get_bride().get_first_name() + " " + wedding.get_couple().get_bride().get_last_name() + " and " + wedding.couple.get_groom().get_first_name() + " " + wedding.get_couple().get_groom().get_last_name());
+        System.out.println("Scheduled to happen on: " + wedding.get_date());
+        System.out.println("At: " + wedding.get_location());
 
     }
 }
